@@ -31,6 +31,7 @@ h1 {
 
 #myVideo {
   border: 10px solid #C5F5FC;
+  overflow: hidden;
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
   -o-border-radius: 100px;
