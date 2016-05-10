@@ -1,0 +1,289 @@
+@charset "UTF-8";
+html body {
+  margin: 0;
+  padding: 0; }
+
+h1 {
+  font-size: 2em;
+  font-family: '微软雅黑',arial,helvetica;
+  color: #fff; }
+
+.header {
+  height: 34%; }
+  .header .backcloud {
+    height: 100%;
+    position: relative; }
+    .header .backcloud a {
+      text-decoration: none; }
+    .header .backcloud .sun {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      background: #FBB8B0;
+      position: absolute;
+      right: 5%;
+      margin-top: 5%;
+      z-index: 5; }
+
+.videoshow {
+  height: 70%;
+  position: relative; }
+
+#myVideo {
+  border: 10px solid #C5F5FC;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -o-border-radius: 100px;
+  border-radius: 100px;
+  height: 100%;
+  width: 100%;
+  margin-top: 3%;
+  box-shadow: 0 3px 5px rgba(7, 66, 199, 0.6);
+  animation: myVideoeo infinite 3s 0.25s; }
+@keyframes myVideoeo {
+  0%, 100% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(-10px); } }
+.hotballoon {
+  margin-top: 180px;
+  margin-left: -240px;
+  position: relative; }
+  @media screen and (max-width: 992px) {
+    .hotballoon {
+      margin-top: 0;
+      margin-left: 0; } }
+  .hotballoon .hotcloud {
+    background: #ffffff;
+    width: 100px;
+    height: 35px;
+    border-radius: 35px;
+    position: absolute;
+    left: 50%;
+    margin-left: -170px;
+    margin-top: 200px;
+    box-shadow: 0 3px 5px rgba(7, 66, 199, 0.6);
+    animation: hotcloud infinite 3s; }
+    .hotballoon .hotcloud:before {
+      content: "";
+      height: 40px;
+      width: 40px;
+      background: #ffffff;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      border-radius: 50%; }
+    .hotballoon .hotcloud:after {
+      content: "";
+      height: 60px;
+      width: 60px;
+      background: #ffffff;
+      position: absolute;
+      bottom: 5px;
+      right: 15%;
+      border-radius: 50%; }
+    .hotballoon .hotcloud:nth-child(2) {
+      width: 80px;
+      margin-left: 70px;
+      margin-top: 190px;
+      animation-delay: -1s; }
+      .hotballoon .hotcloud:nth-child(2):before {
+        left: auto;
+        right: 0; }
+      .hotballoon .hotcloud:nth-child(2):after {
+        width: 50px;
+        height: 50px;
+        right: auto;
+        left: 10%; }
+  .hotballoon .hot-air-balloon {
+    position: absolute;
+    left: 50%;
+    margin-top: 250px;
+    margin-left: -10px;
+    animation: balloon infinite 3s 0.5s; }
+    .hotballoon .hot-air-balloon .balloon {
+      width: 70px;
+      height: 12px;
+      background: #4073EC;
+      border: 3px solid #0562BD;
+      border-radius: 3px;
+      position: absolute;
+      top: -42px;
+      left: 50%;
+      margin-left: -35px; }
+      .hotballoon .hot-air-balloon .balloon:before {
+        content: "";
+        background: #4073EC;
+        width: 140px;
+        height: 160px;
+        position: absolute;
+        bottom: 26px;
+        left: 50%;
+        margin-left: -73px;
+        border-radius: 50%;
+        border: 3px solid #0562BD; }
+      .hotballoon .hot-air-balloon .balloon:after {
+        content: "";
+        background: #4073EC;
+        width: 80px;
+        height: 49px;
+        position: absolute;
+        bottom: 4px;
+        left: 50%;
+        margin-left: -43px;
+        transform: perspective(70px) rotateX(-40deg);
+        border: 3px solid #0562BD;
+        border-top: 0; }
+      .hotballoon .hot-air-balloon .balloon span {
+        display: block;
+        width: 84px;
+        height: 174px;
+        background: #ffffff;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 12px;
+        z-index: 2;
+        border: 3px solid #0562BD;
+        left: 50%;
+        margin-left: -45px;
+        box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.5); }
+        .hotballoon .hot-air-balloon .balloon span:after {
+          content: "";
+          display: block;
+          width: 28px;
+          height: 174px;
+          background: #4073EC;
+          border-radius: 50%;
+          position: absolute;
+          bottom: -3px;
+          z-index: 2;
+          border: 3px solid #0562BD;
+          left: 50%;
+          margin-left: -17px; }
+    .hotballoon .hot-air-balloon .basket {
+      width: 20px;
+      height: 20px;
+      background: #d1c1a5;
+      border: 3px solid #0562BD;
+      border-radius: 3px;
+      position: relative;
+      box-shadow: 0 2px 4px rgba(5, 98, 189, 0.4); }
+      .hotballoon .hot-air-balloon .basket:before {
+        content: "";
+        width: 30px;
+        height: 6px;
+        background: #d1c1a5;
+        position: absolute;
+        top: -12px;
+        left: -8px;
+        border: 3px solid #0562BD;
+        border-radius: 3px; }
+      .hotballoon .hot-air-balloon .basket:after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: -30px;
+        left: -2px;
+        transform: perspective(50px) rotateX(-40deg);
+        border: 2px solid #0562BD; }
+@keyframes hotcloud {
+  0%, 100% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(-10px); } }
+@keyframes balloon {
+  0%, 100% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(-10px); } }
+.headImg {
+  width: 100%;
+  margin-top: 0.5em;
+  max-width: 200px;
+  border: 5px solid #4073EC;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%; }
+
+.wmName.plane {
+  color: #4073EC;
+  height: 100%; }
+
+#welSection {
+  background: -webkit-linear-gradient(top, #AAFFFB, #4073EC);
+  /* Safari 5.1 - 6.0 */
+  background: -moz-linear-gradient(top, #AAFFFB, #4073EC);
+  /*Firefox 3.6 - 15 */
+  background: -o-linear-gradient(top, #AAFFFB, #4073EC);
+  /* Opera 11.1 - 12.0 */
+  background: linear-gradient(top, #AAFFFB, #4073EC);
+  /* 标准的语法 */ }
+
+.svgbox {
+  height: 3em;
+  position: relative;
+  font-size: 3em; }
+  .svgbox .text-line {
+    font-size: 2em; }
+  .svgbox svg {
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+  .svgbox .text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 7% 28%;
+    stroke-width: 3px;
+    animation: stroke-offset 9s infinite linear; }
+    .svgbox .text-copy:nth-child(1) {
+      stroke: #00F1FF;
+      stroke-dashoffset: 7%; }
+    .svgbox .text-copy:nth-child(2) {
+      stroke: #01C7FF;
+      stroke-dashoffset: 14%; }
+    .svgbox .text-copy:nth-child(3) {
+      stroke: #02FFE5;
+      stroke-dashoffset: 21%; }
+    .svgbox .text-copy:nth-child(4) {
+      stroke: #6690F3;
+      stroke-dashoffset: 28%; }
+    .svgbox .text-copy:nth-child(5) {
+      stroke: #0AC9FF;
+      stroke-dashoffset: 35%; }
+@keyframes stroke-offset {
+  50% {
+    stroke-dashoffset: 35%;
+    stroke-dasharray: 0 87.5%; } }
+#cvSection {
+  background: -webkit-linear-gradient(top, #4073EC, #615FB1);
+  /* Safari 5.1 - 6.0 */
+  background: -moz-linear-gradient(top, #4073EC, #615FB1);
+  /*Firefox 3.6 - 15 */
+  background: -o-linear-gradient(top, #4073EC, #615FB1);
+  /* Opera 11.1 - 12.0 */
+  background: linear-gradient(top, #4073EC, #615FB1);
+  /* 标准的语法 */ }
+
+#webSection {
+  background: -webkit-linear-gradient(top, #615FB1, #4073EC);
+  /* Safari 5.1 - 6.0 */
+  background: -moz-linear-gradient(top, #615FB1, #4073EC);
+  /*Firefox 3.6 - 15 */
+  background: -o-linear-gradient(top, #615FB1, #4073EC);
+  /* Opera 11.1 - 12.0 */
+  background: linear-gradient(top, #615FB1, #4073EC);
+  /* 标准的语法 */ }
+
+#paiSection {
+  background: -webkit-linear-gradient(top, #4073EC, #AAFFFB);
+  /* Safari 5.1 - 6.0 */
+  background: -moz-linear-gradient(top, #4073EC, #AAFFFB);
+  /*Firefox 3.6 - 15 */
+  background: -o-linear-gradient(top, #4073EC, #AAFFFB);
+  /* Opera 11.1 - 12.0 */
+  background: linear-gradient(top, #4073EC, #AAFFFB);
+  /* 标准的语法 */ }
+
+/*# sourceMappingURL=main.css.map */
