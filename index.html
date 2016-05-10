@@ -1,380 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Home</title>
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
-<link href='http://fonts.useso.com/css?family=Source+Code+Pro:200,300,400,500,600,700,900' rel='stylesheet' type='text/css'>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="keywords" content="Jalil Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<script src="js/jquery.min.js"> </script>
-<!---- start-smoth-scrolling---->
-		<script type="text/javascript" src="js/move-top.js"></script>
-		<script type="text/javascript" src="js/easing.js"></script>
-		<script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){		
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
-				});
-			});
-		</script>
- 	<!---- start-smoth-scrolling---->
-
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>SuperMin's Page</title>
+	<!-- <link rel="shortcut icon" href="images/star.png" type="favicon/ico" /> -->
+	<link rel="stylesheet" href="css/jquery.fullPage.css"/>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/main.css"/>
+	<link rel="stylesheet" href="css/cloud.css"/>
 </head>
 <body>
-<!--body-->
-<div id="home" class="banner">
-	 <div class="container">
-		 <div class="top-header">		  
-				<div class="logo">
-					<a href="index.html"><img src="images/logo.png" alt="" /></a>
+	<div id="myPage">
+		<!-- welcome page start-->
+		<div class="section " id="welSection">
+			<div class="header">
+				<div class="backcloud">
+					<div class="sun"></div>
+					<div class="frame">
+						<div class="plane-container">
+							<a href="#">
+								<h1 class="wmName plane ">Âº†ÁéÆÊ∞ë</h1>		
+								<h5 class="wmName plane ">Welcome to ZhangWemin's Page</h5>
+								<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								width="1131.53px" height="379.304px" viewBox="0 0 1131.53 379.304" enable-background="new 0 0 1131.53 379.304"
+								xml:space="preserve" class="plane">
+								<polygon fill="#FFFFFF" points="72.008,0 274.113,140.173 274.113,301.804 390.796,221.102 601.682,367.302 1131.53,0.223  "/>
+								<polygon fill="#DBE2E2" points="1131.53,0.223 274.113,140.173 274.113,301.804 390.796,221.102   "/>
+								</svg>
+							</a>
+						</div>
+					</div>
+					<div class="clouds">
+						<embed src="images/cloud.svg" class="cloud big front slowest"/>
+
+						<embed src="images/cloud.svg" class="cloud distant smaller"/>
+
+						<embed src="images/cloud.svg" class="cloud small slow"/>
+
+						<embed src="images/cloud.svg" class="cloud distant super-slow massive"/>
+
+						<embed src="images/cloud.svg" class="cloud front slower"/>
+
+						<embed src="images/cloud.svg" class="cloud small distant slowest"/>
+					</div>
 				</div>
-			  <div class="top-menu">
-					<span class="menu"> </span>
-				  <ul>
-				      <nav class="cl-effect-5">
-							<li><a class="active scroll"  href="#home"><span data-hover="HOME">HOME</span></a></li> 
-							<li>/</li>
-							<li><a class="scroll" href="#service"><span data-hover="SERVICES">SERVICES</span></a></li>
-							<li>/</li>
-							<li><a class="scroll" href="#portfolio"><span data-hover="PORTFOLIO">PORTFOLIO</span></a></li> 
-							<li>/</li>
-							<li><a class="scroll" href="#teamwork"><span data-hover="TEAMWORK">TEAMWORK</span></a></li> 
-							<li>/</li>
-							<li><a class="scroll" href="#contact"><span data-hover="CONTACT">CONTACT</span></a></li>
-					 </nav>
-				  </ul>			 	 
-			  </div>	
-				<!-- script-for-menu -->
-			 <script>
-				$("span.menu").click(function(){
-					$(".top-menu ul").slideToggle("slow" , function(){
-					});
-				});
-			 </script>
-			 <!-- script-for-menu -->
-			 <div class="clearfix"></div>			
-		 </div>	 
-		 <div class="banner-info">	
-			<h1>WELCOME !</h1>
-			<h3>WE ARE HAPPY BEING HERE</h3>
-			<a class="downarrow scroll" href="#service"><span> </span></a>
-		 </div>
-	 </div>
-</div>
-<div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >∆Û“µÕ¯’æƒ£∞Â</a></div>
-<!---->
-<div id="service" class="service">
-	 <div class="container">
-		 <div class="service-head">
-		 <h3>SERVICES</h3>
-		 <h4>WHAT WE DO?</h4>
-		 </div>
-		 <div class="service-grids">
-			 <div class="col-md-4 service-grid">
-				 <img src="images/pic1.png" alt=""/>
-				 <h3>EMARKETING</h3>
-				 <h4>EMAIL, SOCIAL & MARKETING SOLUTIONS</h4>
-			 </div>
-			 <div class="col-md-4 service-grid">
-				 <img src="images/pic2.png" alt=""/>
-				 <h3>DEVELOPMENT</h3>
-				 <h4>WE DEVELOPMENT & MOBILE APPS</h4>
-			 </div>
-			 <div class="col-md-4 service-grid">
-				 <img src="images/pic3.png" alt=""/>
-				 <h3>DESIGN</h3>
-				 <h4>WEB DESIGN & MOBILE APPS</h4>
-			 </div>
-			 <div class="clearfix"></div>
-		 </div>		 
-	 </div>
-</div>
-<!---->
-<div class="author">
-	 <div class="container">
-		 <h3>great web design without functionality is like a sports car with <span>no engine.</span></h3>
-		 <h4>- PAUL COOKSON</h4>
-	 </div>
-</div>
-<!---->
-<script src="js/jquery.min.js"> </script>
-<script src="js/responsiveslides.min.js"></script>
- <script>
-    // You can also use "$(window).load(function() {"
-    $(function () {
-      $("#slider2").responsiveSlides({
-        auto: true,
-        pager: true,
-        speed: 300,
-        namespace: "callbacks",
-      });
-    });
-  </script>
- <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
-<div id="portfolio" class="portfolio">
-	 <div class="container">
-		 <h3>PORTFOLIO</h3>
-		  <div class="slider">
-				<ul class="rslides" id="slider2">
-				  <li>
-					 <div class="works main">						  
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/p7.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> <span class="rollover1"> </span><span class="rollover2"> </span></a> </p></div>     
-								<img src="images/p7.jpg" alt="">
-						  </div>
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/p1.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> <span class="rollover1"> </span><span class="rollover2"> </span></a> </p></div>     
-								<img src="images/p1.jpg" alt="">
-						  </div>
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/p2.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     
-							    <img src="images/p2.jpg" alt="">
-						  </div>
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/p3.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     
-								<img src="images/p3.jpg" alt="">
-						  </div>
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/p4.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     
-								<img src="images/p4.jpg" alt="">
-						  </div>
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/p5.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     
-								<img src="images/p5.jpg" alt="">
-						  </div>
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/p6.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     
-								<img src="images/p6.jpg" alt="">
-						  </div>
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/p7.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     
-								<img src="images/p7.jpg" alt="">
-						  </div>
-						 <div class="clearfix"></div>
-					  </div>				
-				  </li>
-				 <li>
-					 <div class="works main">						  
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/p3.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> <span class="rollover1"> </span><span class="rollover2"> </span></a> </p></div>     
-								<img src="images/p3.jpg" alt="">
-						  </div>
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/p7.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> <span class="rollover1"> </span><span class="rollover2"> </span></a> </p></div>     
-								<img src="images/p7.jpg" alt="">
-						  </div>
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/p6.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     
-							    <img src="images/p6.jpg" alt="">
-						  </div>
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/p4.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     
-								<img src="images/p4.jpg" alt="">
-						  </div>
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/p5.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     
-								<img src="images/p5.jpg" alt="">
-						  </div>
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/p1.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     
-								<img src="images/p1.jpg" alt="">
-						  </div>
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/p2.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     
-								<img src="images/p2.jpg" alt="">
-						  </div>
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/p7.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     
-								<img src="images/p7.jpg" alt="">
-						  </div>
-						 <div class="clearfix"></div>
-					  </div>				
-				  </li>
-				 <li>
-					 <div class="works main">						  
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/p7.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> <span class="rollover1"> </span><span class="rollover2"> </span></a> </p></div>     
-								<img src="images/p7.jpg" alt="">
-						  </div>
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/p4.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo"> <span class="rollover1"> </span><span class="rollover2"> </span></a> </p></div>     
-								<img src="images/p4.jpg" alt="">
-						  </div>
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/p5.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     
-							    <img src="images/p5.jpg" alt="">
-						  </div>
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/p3.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     
-								<img src="images/p3.jpg" alt="">
-						  </div>
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/p1.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     
-								<img src="images/p1.jpg" alt="">
-						  </div>
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/p7.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     
-								<img src="images/p7.jpg" alt="">
-						  </div>
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/p6.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     
-								<img src="images/p6.jpg" alt="">
-						  </div>
-						  <div class="gallery-box">
-								<div id="nivo-lightbox-demo"> <p> <a href="images/p2.jpg" data-lightbox-gallery="gallery1" id="nivo-lightbox-demo">  <span class="rollover1"> </span></a> </p></div>     
-								<img src="images/p2.jpg" alt="">
-						  </div>
-						 <div class="clearfix"></div>
-					  </div>				
-				  </li>
-				</ul>
-				   <script type="text/javascript" src="js/nivo-lightbox.min.js"></script>
-				<script type="text/javascript">
-				$(document).ready(function(){
-				    $('#nivo-lightbox-demo a').nivoLightbox({ effect: 'fade' });
-				});
-				</script>
-		  </div>
-	 </div>
-</div>
-<!---->
-<div id="teamwork" class="teamwork">
-	 <div class="container">
-		 <div class="team-head">
-		 <h3>TEAMWORK</h3>
-		 <h4>JUST A CREATIVE TEAM</h4>
-		 </div>
-		 <div class="clients">
-			 <div class="course_demo1">
-		          <ul id="flexiselDemo1">	
-					 <li>
-						<div class="client">
-							<img src="images/per1.png" alt="" />
-							<h3>Anas.Emad</h3>
-							<h4>EMARKETING SPECIALIST</h4>
+			</div>
+			<div class="videoshow container">
+				<div class="row">
+					<!-- <div class="col-md-4 col-md-offset-2"> -->
+					<div class="col-md-6">
+						<video autoplay loop muted id="myVideo">
+						    <source src="images/welcome.mp4" type="video/mp4">
+						    <source src="images/welcome.flv" type="video/flv">
+							ÂØπ‰∏çËµ∑Ôºå‰Ω†ÁöÑÊµèËßàÂô®Ëøò‰∏çÊîØÊåÅHtml5 Audio and Video!
+						</video>
+					</div>
+					<div class="col-md-6">
+					<div class="hotballoon">
+						<div class="hotcloud"></div>
+						<div class="hotcloud"></div>
+						<div class="hot-air-balloon">
+						  <div class="balloon"><span></span></div>
+						  <div class="basket"></div>
 						</div>
-					 </li>
-					 <li>
-					    <div class="client">
-							<img src="images/per2.png" alt="" />
-							<h3>M.Baghago</h3>
-							<h4>UI/UX DESIGNER</h4>
-						</div>
-					  </li>	
-					 <li>
-					    <div class="client">
-							<img src="images/per4.png" alt="" />
-							<h3>Ahmed Ali</h3>
-							<h4>SENIOR UI DESIGNER</h4>
-						</div>
-					 </li>	
-					 <li>
-					    <div class="client">
-							<img src="images/per3.png" alt="" />
-							<h3>A.Eliminshawy</h3>
-							<h4>GRAPHIC DESIGNER</h4>
-						</div>
-					 </li>	
-					 <li>
-						<div class="client">
-							<img src="images/per2.png" alt="" />
-							<h3>A.Eliminshawy</h3>
-							<h4>GRAPHIC DESIGNER</h4>
-						</div>
-					 </li>	
-					 <li>
-						<div class="client">
-							<img src="images/per3.png" alt="" />
-							<h3>M.Baghago</h3>
-							<h4>UI/UX DESIGNER</h4>
-						</div>
-					 </li>
-					 <li>
-						<div class="client">
-							<img src="images/per4.png" alt="" />
-							<h3>Ahmed Ali</h3>
-							<h4>SENIOR UI DESIGNER</h4>
-						</div>
-					 </li>
-				 </ul>
-			 </div>
-			 <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
-				<script type="text/javascript">
-			 $(window).load(function() {
-				$("#flexiselDemo1").flexisel({
-					visibleItems: 4,
-					animationSpeed: 1000,
-					autoPlay: true,
-					autoPlaySpeed: 3000,    		
-					pauseOnHover: true,
-					enableResponsiveBreakpoints: true,
-			    	responsiveBreakpoints: { 
-			    		portrait: { 
-			    			changePoint:480,
-			    			visibleItems: 1
-			    		}, 
-			    		landscape: { 
-			    			changePoint:640,
-			    			visibleItems: 2
-			    		},
-			    		tablet: { 
-			    			changePoint:768,
-			    			visibleItems: 3
-			    		}
-			    	}
-			    });
-			    
-			 });
-			  </script>
-			 <script type="text/javascript" src="js/jquery.flexisel.js"></script>
-		 </div>
-	 </div>
-</div>
-<!---contact-->
-<div id="contact" class="contact">
-	 <div class="container">
-		 <h3>CONTACT</h3>
-		 <h4>WE'RE ALWAYS HERE TO HELP YOU</h4>
-		 <div class="contact-form">
-			 <form>
-				 <div class="col-md-6 contact-left">
-					  <input type="text" placeholder="Name" required/>
-					  <input type="text" placeholder="E-mail" required/>
-					  <input type="text" placeholder="Phone" required/>
-				  </div>
-				  <div class="col-md-6 contact-right">
-					 <textarea placeholder="Message"></textarea>
-					 <input type="submit" value="SEND"/>
-				 </div>
-				 <div class="clearfix"></div>
-			 </form>
-	     </div>
-	 </div>
-</div>
-<!---fotter-->
-<div class="fotter">
-	 <p>Copyright &copy; 2015.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="ƒ£∞Â÷Æº“">ƒ£∞Â÷Æº“</a> - Collect from <a href="http://www.cssmoban.com/" title="Õ¯“≥ƒ£∞Â" target="_blank">Õ¯“≥ƒ£∞Â</a></p>
-</div>
-<!---->
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- welcome page end-->
+		<!-- CV page start-->
+		<div class="section" id="cvSection">
+			<h1>ÊàëÁöÑÁÆÄÂéÜ</h1>
+		</div>
+		<!-- CV page end-->
+		<!-- code works page start-->
+		<div class="section" id="webSection">
+			<div class="intro">
+				<h1>Web Works</h1>
+				<p>Using CSS3 gradients you can play as much as you want with graduated colors</p>
+			</div>
+			
+		</div>
+		<!-- code works page end-->
+		<!-- painting works page start-->
+		<div class="section" id="paiSection">
+			
+		</div>
+		<!-- painting works page end-->
+	</div>
 
-<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-<script type="text/javascript">
+	<script src="js/jquery.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/jquery.fullPage.js"></script>
+	<script type="text/javascript">
 		$(document).ready(function() {
-				/*
-				var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-				};
-				*/
-		$().UItoTop({ easingType: 'easeOutQuart' });
-});
-</script>
-
+			$("#myPage").fullpage({
+				anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
+				sectionsColor: ['#A6CCEC', '#1BBC9B', '#7E8F7C', '#e8c43d'],
+				navigation: true,
+				navigationPosition: 'right',
+				navigationTooltips: ['Welcome Page', 'CV Page', 'Webworks Page', 'Paintings Page'],
+				continuousVertical: true
+			});
+		});
+	</script>
 </body>
 </html>
