@@ -1,2 +1,2 @@
 # aflyermin.github.io
-supermin的博客
+supermin的小站
