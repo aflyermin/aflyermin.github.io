@@ -46,7 +46,7 @@ h1{
 	}
 }
 .videoshow{
-	height:70%;
+	height:66%;
 	position: relative;
 }
 #myVideo{
@@ -337,17 +337,39 @@ h1{
 	background: -moz-linear-gradient(top, $color-two, $color-three); /*Firefox 3.6 - 15 */
 	background: -o-linear-gradient(top, $color-two, $color-three); /* Opera 11.1 - 12.0 */
 	background: linear-gradient(top, $color-two, $color-three); /* 标准的语法 */
+	// display:block;
+}
+@mixin introp{
+	color: #fff;
+	padding: 40px 0 0 0;
+	width: 50%;
+	margin: 0 auto;
+	font-size: 2em;
+	vertical-align: middle;
 }
 #webSection{
 	background: -webkit-linear-gradient(top, $color-three, $color-two); /* Safari 5.1 - 6.0 */
 	background: -moz-linear-gradient(top, $color-three, $color-two); /*Firefox 3.6 - 15 */
 	background: -o-linear-gradient(top, $color-three, $color-two); /* Opera 11.1 - 12.0 */
 	background: linear-gradient(top, $color-three, $color-two); /* 标准的语法 */
+	text-align:center;
+	.intro h1{
+		font-size: 4em;
+	}
+
+	.intro p{
+		@include introp;
+	}
 }
 
-#paiSection{
+#endSection{
 	background: -webkit-linear-gradient(top, $color-two, $color-one); /* Safari 5.1 - 6.0 */
 	background: -moz-linear-gradient(top, $color-two, $color-one); /*Firefox 3.6 - 15 */
 	background: -o-linear-gradient(top, $color-two, $color-one); /* Opera 11.1 - 12.0 */
 	background: linear-gradient(top, $color-two, $color-one); /* 标准的语法 */
+	text-align: center;
+	.intro p{
+		@include introp;
+	}
+
 }

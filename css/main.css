@@ -26,7 +26,7 @@ h1 {
       z-index: 5; }
 
 .videoshow {
-  height: 70%;
+  height: 66%;
   position: relative; }
 
 #myVideo {
@@ -275,9 +275,19 @@ h1 {
   background: -o-linear-gradient(top, #615FB1, #4073EC);
   /* Opera 11.1 - 12.0 */
   background: linear-gradient(top, #615FB1, #4073EC);
-  /* 标准的语法 */ }
+  /* 标准的语法 */
+  text-align: center; }
+  #webSection .intro h1 {
+    font-size: 4em; }
+  #webSection .intro p {
+    color: #fff;
+    padding: 40px 0 0 0;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 2em;
+    vertical-align: middle; }
 
-#paiSection {
+#endSection {
   background: -webkit-linear-gradient(top, #4073EC, #AAFFFB);
   /* Safari 5.1 - 6.0 */
   background: -moz-linear-gradient(top, #4073EC, #AAFFFB);
@@ -285,6 +295,14 @@ h1 {
   background: -o-linear-gradient(top, #4073EC, #AAFFFB);
   /* Opera 11.1 - 12.0 */
   background: linear-gradient(top, #4073EC, #AAFFFB);
-  /* 标准的语法 */ }
+  /* 标准的语法 */
+  text-align: center; }
+  #endSection .intro p {
+    color: #fff;
+    padding: 40px 0 0 0;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 2em;
+    vertical-align: middle; }
 
 /*# sourceMappingURL=main.css.map */

@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>SuperMin's Page</title>
-	<!-- <link rel="shortcut icon" href="images/star.png" type="favicon/ico" /> -->
+	<link rel="shortcut icon" href="images/favicon.ico" type="favicon/ico" />
 	<link rel="stylesheet" href="css/jquery.fullPage.css"/>
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="css/main.css"/>
@@ -73,28 +73,34 @@
 		<!-- welcome page end-->
 		<!-- CV page start-->
 		<div class="section" id="cvSection">
-			<h1>我的简历</h1>
+			<!-- <h1>我的简历</h1> -->
+			<iframe src="cvSection/index.html" frameborder="0" width="100%" height="98%" allowTransparency="true"></iframe>
 		</div>
 		<!-- CV page end-->
 		<!-- code works page start-->
 		<div class="section" id="webSection">
 			<div class="intro">
 				<h1>Web Works</h1>
-				<p>Using CSS3 gradients you can play as much as you want with graduated colors</p>
+				<p>Coming soon...</p>
 			</div>
 			
 		</div>
 		<!-- code works page end-->
-		<!-- painting works page start-->
-		<div class="section" id="paiSection">
-			
+		<!-- end page start-->
+		<div class="section" id="endSection">
+			<div class="intro">
+				<h1>CONTACT ME!</h1>
+				<p>Coming soon...</p>
+			</div>
 		</div>
-		<!-- painting works page end-->
+		<!-- end page end-->
 	</div>
 
 	<script src="js/jquery.min.js"></script>
 	<script src="bootstrap/js/bootstrap.min.js"></script>
 	<script src="js/jquery.fullPage.js"></script>
+	<script src="js/jquery.slimscroll.min.js"></script>
+	<script src="js/jquery.easings.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$("#myPage").fullpage({
@@ -102,8 +108,12 @@
 				sectionsColor: ['#A6CCEC', '#1BBC9B', '#7E8F7C', '#e8c43d'],
 				navigation: true,
 				navigationPosition: 'right',
-				navigationTooltips: ['Welcome Page', 'CV Page', 'Webworks Page', 'Paintings Page'],
-				continuousVertical: true
+				navigationTooltips: ['Welcome Page', 'CV Page', 'Webworks Page', 'Contact Page'],
+				continuousVertical: true,
+				scrollOverflow: true,
+				css3: false,
+				// easingcss3: 'cubic-bezier(0.175, 0.885, 0.320, 1.275)'
+				easing: 'easeInBounce'
 			});
 		});
 	</script>
